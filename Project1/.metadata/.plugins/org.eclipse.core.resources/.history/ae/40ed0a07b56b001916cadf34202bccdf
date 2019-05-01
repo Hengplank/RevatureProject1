@@ -1,0 +1,11 @@
+package com.revature.servlets;
+
+
+import javax.servlet.http.HttpServlet;
+
+import com.revature.beans.*;
+import com.revature.dao.*;
+
+public class GetCurrentUser extends HttpServlet{
+	
+}

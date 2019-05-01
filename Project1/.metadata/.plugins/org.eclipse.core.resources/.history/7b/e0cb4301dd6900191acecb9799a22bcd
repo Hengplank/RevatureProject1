@@ -1,0 +1,19 @@
+package com.revature.utilities;
+
+import java.sql.*;
+
+import oracle.jdbc.OracleDriver;
+
+public class ConnectionUtil {
+	
+	//TODO Link to AWS server
+	public static Connection getConnection() throws SQLException{
+		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String username= "admin";
+		String password= "mypassword";
+		OracleDriver driver = new OracleDriver();
+        DriverManager.registerDriver(driver);
+        return DriverManager.getConnection(url,username,password);
+	}		
+	
+}

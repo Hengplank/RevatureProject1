@@ -1,0 +1,81 @@
+package com.revature.dao.daoimpl;
+
+import java.io.OutputStream;
+import java.util.List;
+
+import org.omg.CORBA.Request;
+
+import com.revature.beans.User;
+import com.revature.beans.UserRole;
+
+public class UserDaoImpl {
+
+	public User verifyUser(String username, String password)
+	{
+		return null;
+		
+	}
+	public User getUser(String username)
+	{
+		return null;
+		
+	}
+	public boolean updateUser(User user)
+	{
+		return false;
+		
+	}
+	public boolean denyRequest(int req_id, int reolver_id)
+	{
+		return false;
+		
+	}
+	public boolean approveRequest(int req_id, int resolver_id)
+	{
+		return false;
+		
+	}
+	public List<Request> getPendingRequests(int employee_id)
+	{
+		return null;
+		
+	}
+	public List<Request> getResolvedRequests(int employee_id)
+	{
+		return null;
+		
+	}
+	public List<Request> getPendingRequests()
+	{
+		return null;
+		
+	}
+	public List<Request> getResolvedRequests()
+	{
+		return null;
+		
+	}
+	public List<User> getEmployees()
+	{
+		return null;
+		
+	}
+	public boolean createUser(String username, String password, String firstname, 
+			String lastname, String email, UserRole role)
+	{
+		return false;
+		
+	}
+	//public boolean createRequest(double amount,String description, 
+	//		InputStream receipt_image, int user_id, RequestPayload type);
+	//public boolean createRequest(double amount,String description, 
+	//		InputStream receipt_image, int user_id, RequestType type);
+	public void getReceipt(int receipt_id, OutputStream out)
+	{
+		
+	}
+	public void getReceipt(int user_id, int receipt_id, OutputStream out)
+	{
+		
+	}
+}
